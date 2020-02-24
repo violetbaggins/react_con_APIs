@@ -1,24 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TiraPeliculas from "./components/TiraPeliculas"
+import Contador from "./components/Contador"
+import Gif from "./components/Gif"
+import Clima from "./components/Clima"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="bg-dark text-white" >
+        este es un header
       </header>
+      <main>
+        <div className="row">
+          <div className="col-6">
+            <Clima/>
+          </div>
+          <div className="col-6">
+            <Gif/>
+          </div>
+        </div>
+        <TiraPeliculas/>
+       <Contador inicial={0}/>
+      </main>
     </div>
   );
 }
