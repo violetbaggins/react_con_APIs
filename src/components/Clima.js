@@ -58,8 +58,8 @@ class Clima extends Component {
         }else{
         contenido = <div>
              
-            <p>Ciudad: {this.state.city}</p>
-            <p>clima: {this.state.main}</p>
+            <h3>Ciudad: {this.state.city}</h3>
+            <p>clima general: {this.state.main}</p>
             <p>{this.state.temp}° Grados</p>
             
 
